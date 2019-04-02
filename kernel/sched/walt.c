@@ -387,6 +387,7 @@ bool early_detection_notify(struct rq *rq, u64 wallclock)
 	struct task_struct *p;
 	int loop_max = 10;
 
+
 	if (!is_ed_enabled() || !rq->cfs.h_nr_running)
 		return 0;
 
