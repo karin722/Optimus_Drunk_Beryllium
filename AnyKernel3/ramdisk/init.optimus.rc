@@ -8,13 +8,13 @@ on post-fs
 
 on property:sys.boot_completed=1
     # I/O Scheduler
-    write /sys/block/sda/queue/scheduler maple
-    write /sys/block/sdb/queue/scheduler maple
-    write /sys/block/sdc/queue/scheduler maple
-    write /sys/block/sdd/queue/scheduler maple
-    write /sys/block/sde/queue/scheduler maple
-    write /sys/block/sdf/queue/scheduler maple
-    write /sys/block/dm-0/queue/scheduler maple
+    write /sys/block/sda/queue/scheduler anxiety
+    write /sys/block/sdb/queue/scheduler anxiety
+    write /sys/block/sdc/queue/scheduler anxiety
+    write /sys/block/sdd/queue/scheduler anxiety
+    write /sys/block/sde/queue/scheduler anxiety
+    write /sys/block/sdf/queue/scheduler anxiety
+    write /sys/block/dm-0/queue/scheduler anxiety
 
     # Runtime FS tuning: as we have init boottime setting and kernel patch setting
     # default readahead to 2048KB. We should adjust the setting upon boot_complete
