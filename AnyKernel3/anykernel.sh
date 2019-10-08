@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=UmiNico Kernel by karin722
+kernel.string=UmiNico Kernel by GtrCraft,karin722
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
