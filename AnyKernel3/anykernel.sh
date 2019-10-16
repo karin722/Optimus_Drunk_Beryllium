@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Optimus Drunk Kernel by GtrCraft
+kernel.string=UmiNico kernel by GtrCraft,karin722
 do.devicecheck=1
 do.modules=0
 do.cleanup=1

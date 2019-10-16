@@ -6,11 +6,11 @@ DATE_POSTFIX=$(date +"%Y%m%d")
 
 ## Copy this script inside the kernel directory
 KERNEL_DIR=$PWD
-KERNEL_TOOLCHAIN=$ANDROIDDIR/kernel/prebuilts/aarch64-elf-gcc-9.2.0/bin/aarch64-elf-
-ARM32_TOOLCHAIN=$ANDROIDDIR/kernel/prebuilts/arm-eabi-gcc-9.2.0/bin/arm-eabi-
-KERNEL_DEFCONFIG=beryllium_defconfig
+## KERNEL_TOOLCHAIN=$ANDROIDDIR/kernel/prebuilts/aarch64-elf-gcc-9.2.0/bin/aarch64-elf-
+## ARM32_TOOLCHAIN=$ANDROIDDIR/kernel/prebuilts/arm-eabi-gcc-9.2.0/bin/arm-eabi-
+KERNEL_DEFCONFIG=polaris_defconfig
 ANY_KERNEL3_DIR=$KERNEL_DIR/AnyKernel3/
-FINAL_KERNEL_ZIP=Optimus_Drunk_Beryllium-$DATE_POSTFIX.zip
+FINAL_KERNEL_ZIP=UmiNico_polaris-$DATE_POSTFIX.zip
 # Speed up build process
 MAKE="./makeparallel"
 
@@ -22,10 +22,10 @@ red='\033[0;31m'
 nocol='\033[0m'
 
 echo "**** Setting Toolchain ****"
-export CROSS_COMPILE=$KERNEL_TOOLCHAIN
-export CROSS_COMPILE_ARM32=$ARM32_TOOLCHAIN
-export ARCH=arm64
-export SUBARCH=arm64
+## export CROSS_COMPILE=$KERNEL_TOOLCHAIN
+## export CROSS_COMPILE_ARM32=$ARM32_TOOLCHAIN
+## export ARCH=arm64
+## export SUBARCH=arm64
 
 # Clean build always lol
 echo "**** Cleaning ****"
